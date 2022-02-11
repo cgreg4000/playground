@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .flexed {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+    
+        .container {
+            margin: 0 auto;
+            width: 70%;
+            min-height: 50px;
+        }
+    
+        h1 {
+            text-align: center;
+            padding: 1.5rem;
+        }
+    
+        .boxes {
+            background-color: #9ec5f9;
+            min-height: 225px;
+            min-width: 225px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <div class="flexed">
+        
+        {% for i in range(0,x): %}
+            <div class="boxes" style="background-color: {{color}};"></div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
